@@ -14,7 +14,11 @@ fn main() {
 
     let blob: Blob = blob_raw_data.into_boxed_slice().try_into().unwrap();
 
-    let bundle_bytes = blob::Decoder::default().decode(&[blob]).unwrap();
+    let blob_decoder = blob::Decoder::default();
+    let blob_header = blob_decoder.read_header(&blob).unwrap();
+    eprintln!("{blob_header:?}");
+
+    let bundle_bytes = blob_decoder.decode(&[blob]).unwrap();
     let bundle: Bundle = bundle::Decoder::default().decode(&bundle_bytes).unwrap();
 
     println!("{:?}", bundle);

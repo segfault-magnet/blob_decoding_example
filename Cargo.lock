@@ -711,7 +711,7 @@ checksum = "f81ec6369c545a7d40e4589b5597581fa1c441fe1cce96dd1de43159910a36a2"
 [[package]]
 name = "fuel-block-committer-encoding"
 version = "0.9.0"
-source = "git+https://github.com/FuelLabs/fuel-block-committer?branch=feat/blob_metadata#692b4164338875e410274b236156975f6c58a2f9"
+source = "git+https://github.com/FuelLabs/fuel-block-committer?branch=feat/blob_metadata#fbb8896f9f1b025d1ed3a2873488d482145a275f"
 dependencies = [
  "alloy",
  "anyhow",
