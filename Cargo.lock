@@ -119,8 +119,9 @@ dependencies = [
 
 [[package]]
 name = "fuel-block-committer-encoding"
-version = "0.9.0"
-source = "git+https://github.com/FuelLabs/fuel-block-committer?branch=feat/blob_metadata#9daab96199e7da6a8ffc40eca014d3dccac3593a"
+version = "0.10.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9ba8a15edcf1a3f2be2a38fafd6932a25ab59d02559187228bdb617956f83a07"
 dependencies = [
  "anyhow",
  "bitvec",
